@@ -1,99 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        
-    </head>
-    <title>Payment Form</title>
-    <body class="bg-light">
-        <div class="container border border-secondary">
-            <div class="row bg-info p-3 rounded">
-                   <h3>Payment Confirmation Form</h3> 
-            </div>
-        <div class="row p-3">
-            <div class="col-11 btn-secondary m-auto rounded mt-4">
-                <p>Some fields are missing</p>
-            </div>
-        <div class="row p-3">
-            <div class="col-6">
-                <span>Card Number</span>
-                <input type="text" class="form-control" placeholder="xxxxxxxxxxxxxxxx" aria-label="Card Number">
-            </div>
-            <div class="col-3">
-                <span>CVC</span>
-                <input type="text" class="form-control" placeholder="0000" aria-label="CVC">
-            </div>
-            <div class="col-3">
-                <span>Amount</span>
-                <input type="text" class="form-control" placeholder="Amount" aria-label="Amount">
-            </div>
-        </div>
-        <div class="row p-3">
-            <div class="col-6">
-                <span>First Name</span>
-                <input type="text" class="form-control" placeholder="Joe" aria-label="First Name">
-                <div class="invalid-feedback">
-                    Valid first name is required.
-                </div>
-            </div>
-            <div class="col-6">
-                <span>Last Name</span>
-                <input type="text" class="form-control" placeholder="Dirt" aria-label="Last Name">
-                <div class="invalid-feedback">
-                    Valid first name is required.
-                </div>
-            </div>
-            <div class="row p-3">
-            <div class="col-6">
-                <span>City</span>
-                <input type="text" class="form-control" placeholder="City" aria-label="City">
-            </div>
-            <div class="col-3">
-                <span>States</span>
-                <label for="States"
-                class>States</label> 
-                <select id="username"
-                class="form-control">   
-                    <option value="">Choose...</option>
-                    <option value="Maine">Maine</option>
-                    <option value="Maine">Florida</option>
-                    <option value="Maine">North Dakota</option></select>
-            </div>
-            <div class="col-3">
-                <span>Zip Code</span>
-                <input type="text" class="form-control" placeholder="Zip Code" aria-label="Zip Code">
-            </div>
-            </div>
-        </div>
-        
-            <h6 class="mb-margin bottom-0"> We accept:</h6>
-            <div class="row">
-                <div class="col-6"></div>
-                <div class="form-check">
-                <input id="creditCard" 
-                name="paymentMethod" type="radio"
-                class="form-check-input" checked
-                required>
-                <label for="creditCard">Credit Card</label>
-            </div>
+	<head>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous" />
+	</head>
+	<title>Payment Form</title>
+	<body class="bg-light">
+		<div class="container border border-secondary">
+			<div class="row bg-info p-3 rounded">
+				<h3>Payment Confirmation Form</h3>
+			</div>
+			<div class="row p-3">
+				<div class="col-11 btn-secondary m-auto rounded mt-4">
+					<p>Some fields are missing</p>
+				</div>
+			</div>
+			<div class="row p-3">
+				<div class="col-6">
+					<span>Card Number</span>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="xxxxxxxxxxxxxxxx"
+						aria-label="Card Number" />
+				</div>
+				<div class="col-3">
+					<span>CVC</span>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="0000"
+						aria-label="CVC" />
+				</div>
+				<div class="col-3">
+					<span>Amount</span>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Amount"
+						aria-label="Amount" />
+				</div>
+			</div>
+			<div class="row p-3">
+				<div class="col-6">
+					<span>First Name</span>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Joe"
+						aria-label="First Name" />
+					<div class="invalid-feedback">
+						Valid first name is required.
+					</div>
+				</div>
+				<div class="col-6">
+					<span>Last Name</span>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Dirt"
+						aria-label="Last Name" />
+					<div class="invalid-feedback">
+						Valid first name is required.
+					</div>
+				</div>
+			</div>
+			<div class="row p-3">
+				<div class="col-6">
+					<span>City</span>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="City"
+						aria-label="City" />
+				</div>
+				<div class="col-3">
+					<span>States</span>
+					<label for="States" class>States</label>
+					<select id="username" class="form-control">
+						<option value="">Choose...</option>
+						<option value="Maine">Maine</option>
+						<option value="Maine">Florida</option>
+						<option value="Maine">North Dakota</option>
+					</select>
+				</div>
+				<div class="col-3">
+					<span>Zip Code</span>
+					<input
+						type="text"
+						class="form-control"
+						placeholder="Zip Code"
+						aria-label="Zip Code" />
+				</div>
+			</div>
+		</div>
 
-            <div class="form-check">
-                <input id="Paypal"
-                name="paymentMethod" type="radio"
-                class="form-check-input" checked
-                required>
-                <label for="Paypal">Paypal</label>
-            </div>
-            <div class="col-6">
-                <textarea placeholder="Message"> Message</textarea>
-            </div>
-           <div class="p-3">
-            <button>Submit</button>
-            
-        </div>
-             
-        </div>
-        <!--This is the link for the bootstrap body link-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+		<h6 class="mb-margin bottom-0">We accept:</h6>
+		<div class="row">
+			<div class="col-6"></div>
+			<div class="form-check">
+				<input
+					id="creditCard"
+					name="paymentMethod"
+					type="radio"
+					class="form-check-input"
+					checked
+					required />
+				<label for="creditCard">Credit Card</label>
+			</div>
+
+			<div class="form-check">
+				<input
+					id="Paypal"
+					name="paymentMethod"
+					type="radio"
+					class="form-check-input"
+					checked
+					required />
+				<label for="Paypal">Paypal</label>
+			</div>
+			<div class="col-6">
+				<textarea placeholder="Message"> Message</textarea>
+			</div>
+			<div class="p-3">
+				<button>Submit</button>
+			</div>
+		</div>
+		<!--This is the link for the bootstrap body link-->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"></script>
+	</body>
 </html>
